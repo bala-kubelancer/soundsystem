@@ -8,7 +8,7 @@ import (
 
 func main() {
 	// 👉 Only change this for your ArgoCD demo
-	soundValue := "dts" // e.g. "dolby", "atmos", "7.1", etc.
+	soundValue := "DOLBY ATMOS" // e.g. "dolby", "atmos", "7.1", etc.
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Set("Content-Type", "text/html; charset=utf-8")

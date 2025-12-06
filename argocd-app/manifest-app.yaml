@@ -7,13 +7,13 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/YOUR-GITHUB-USER/soundsystem.git
+    repoURL: https://github.com/bala-kubelancer/soundsystem.git
     targetRevision: main
-    path: helm/soundsystem
+    path: k8s/manifest
 
   destination:
     server: https://kubernetes.default.svc
-    namespace: gitops-demo
+    namespace: soundsystem
 
   syncPolicy:
     automated:
