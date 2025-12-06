@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: soundsystem
-          image: ghcr.io/YOUR-GITHUB-USER/soundsystem:latest
+          image: ghcr.io/YOUR-GITHUB-USER/soundsystem:d37150b2dafd0f443ff48bc33e5e7af51ee8173d
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
