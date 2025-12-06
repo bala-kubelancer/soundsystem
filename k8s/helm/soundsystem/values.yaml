@@ -1,7 +1,7 @@
 replicaCount: 1
 image:
   repository: ghcr.io/bala-kubelancer/soundsystem
-  tag: "10f62eccf8bd54155498b3d5864fd468cc63ba55"
+  tag: "70c61f9d780c49b4c39bc195d83e41ead3cb19f3"
   pullPolicy: Always
 imagePullSecrets: []
 nameOverride: ""
