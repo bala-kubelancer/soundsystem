@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: soundsystem
-          image: ghcr.io/bala-kubelancer/soundsystem:d37150b2dafd0f443ff48bc33e5e7af51ee8173d
+          image: ghcr.io/bala-kubelancer/soundsystem:10f62eccf8bd54155498b3d5864fd468cc63ba55
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
