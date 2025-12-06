@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: soundsystem
+  namespace: soundsystem
+  labels:
+    app: soundsystem
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: soundsystem
+  template:
+    metadata:
+      labels:
+        app: soundsystem
+    spec:
+      containers:
+        - name: soundsystem
+          image: ghcr.io/YOUR-GITHUB-USER/soundsystem:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+          resources:
+            requests:
+              cpu: "50m"
+              memory: "64Mi"
+            limits:
+              cpu: "200m"
+              memory: "128Mi"

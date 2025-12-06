@@ -1,0 +1,6 @@
+apiVersion: v2
+name: soundsystem
+description: Simple GitOps Demo App for Kubernetes using Helm and ArgoCD and FluxCD
+type: application
+version: 0.1.0
+appVersion: "1.0.0"

@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "soundsystem.fullname" . }}
+  labels:
+    app: {{ include "soundsystem.name" . }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ include "soundsystem.name" . }}
+  template:
+    metadata:
+      labels:
+        app: {{ include "soundsystem.name" . }}
+    spec:
+      containers:
+        - name: {{ include "soundsystem.name" . }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - containerPort: {{ .Values.service.targetPort }}
+          resources:
+{{- toYaml .Values.resources | nindent 12 }}
