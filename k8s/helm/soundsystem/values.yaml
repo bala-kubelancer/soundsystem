@@ -1,8 +1,8 @@
 replicaCount: 1
 
 image:
-  repository: ghcr.io/YOUR-GITHUB-USER/soundsystem
-  tag: "latest"
+  repository: ghcr.io/bala-kubelancer/soundsystem
+  tag: "d37150b2dafd0f443ff48bc33e5e7af51ee8173d"
   pullPolicy: Always
 
 imagePullSecrets: []
